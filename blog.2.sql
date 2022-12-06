@@ -199,4 +199,16 @@ INSERT INTO comments (
 );
 
 -- Categorias dos artigos
-CREATE TABLE categories
+CREATE TABLE categories (
+	cat_id INT PRIMARY KEY AUTO_INCREMENT,
+    cat_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	cat_name VARCHAR(127) NOT NULL
+);
+
+CREATE TABLE art_cat (
+	ac_id INT PRIMARY KEY AUTO_INCREMENT,
+	ac_category INT NOT NULL,
+	ac_article INT NOT NULL,
+	FOREIGN KEY (ac_category) REFERENCES categories(cat_id),
+	FOREIGN KEY (ac_article) REFERENCES articles(art_id)
+);
