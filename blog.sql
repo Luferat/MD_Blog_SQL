@@ -111,7 +111,7 @@ CREATE TABLE articles (
     content TEXT NOT NULL,
     author INT NOT NULL,
     views INT,
-    user_status ENUM('on', 'off', 'del', 'ban') DEFAULT 'on',
+    art_status ENUM('on', 'off', 'del') DEFAULT 'on',
     FOREIGN KEY (author) REFERENCES users(usr_id)
 );
 
