@@ -197,6 +197,3 @@ INSERT INTO comments (
     '1',
     '2'
 );
-
--- Categorias dos artigos
-CREATE TABLE categories
