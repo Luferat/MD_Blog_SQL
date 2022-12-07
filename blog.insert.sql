@@ -12,7 +12,7 @@ INSERT INTO users (
 ) VALUES (
 	'1',
     '2022-11-10 12:44:59',
-    'Joca da Silva',
+    'Joca de Souza da Silva',
     'joca@silva.com',
     SHA1('Senha123'),
     '1998-10-18',
@@ -22,7 +22,7 @@ INSERT INTO users (
 ), (
 	'2',
     '2022-11-12 15:16:17',
-    'Setembrino Trocatapas',
+    'Setembrino Trampeiro Trocatapas',
     'set@brino.com',
     SHA1('Senha123'),
     '2000-12-09',
@@ -55,7 +55,7 @@ INSERT INTO users (
 ) VALUES (
     '4',
 	'2022-11-18 12:13:15',
-    'Hermenilda Souzasilva',
+    'Hermenilda Maria Souzasilva',
     'hermesouza@silva.com',
     SHA1('Senha123'),
     '1999-03-08',
@@ -65,7 +65,7 @@ INSERT INTO users (
 ), (
 	'5',
     '2022-11-22 10:48:54',
-    'Enéziolidio Carvalhão',
+    'Enéziolidio Neumatózio Carvalhão',
     'enezio@gmail.com',
     SHA1('Senha123'),
     '2001-01-02',
@@ -75,7 +75,7 @@ INSERT INTO users (
 ), (
 	'6',
     '2022-11-28 15:15:15',
-    'Zinildina Rolandia',
+    'Zinildina ESbelta Rolandia',
     'zini@landia.com.br',
     SHA1('Senha123'),
     '1985-09-14',
@@ -149,15 +149,15 @@ INSERT INTO comments (
     '1'
 ), (
     'Reprehenderit repudiandae a quibusdam eligendi, culpa maiores asperiores?',
-    '1',
+    '2',
     '2'
 ), (
     'Repellendus maxime corporis fugit, molestiae illo nesciunt, atque magni ullam unde nam accusamus.',
-    '1',
+    '2',
     '3'
 ), (
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusamus, assumenda temporibus.',
-    '1',
+    '3',
     '2'
 );
 
