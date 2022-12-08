@@ -49,7 +49,7 @@ CREATE TABLE comments (
     FOREIGN KEY (user) REFERENCES users(user_id)
 );
 
--- Cria tabela de contatos
+-- Cria tabela de contatos.
 CREATE TABLE contacts (
     id INT PRIMARY KEY AUTO_INCREMENT,
     date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -58,4 +58,20 @@ CREATE TABLE contacts (
     subject VARCHAR(255),
     message TEXT,
     status ENUM('received', 'readed', 'responded', 'archived', 'deleted') DEFAULT 'received'
+);
+
+-- Cria lista de categorias.
+CREATE TABLE categories (
+    cat_id INT PRIMARY KEY AUTO_INCREMENT,
+    cat_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    cat_name VARCHAR(127)
+);
+
+-- Cria tabela de ligação entre artigos e categorias.
+CREATE TABLE art_cat (
+    ac_id INT PRIMARY KEY AUTO_INCREMENT,
+    ac_category INT,
+    ac_article INT,
+    FOREIGN KEY ac_category REFERENCES categories(cat_id),
+    FOREIGN KEY ac_article REFERENCES articles(art_id)
 );
