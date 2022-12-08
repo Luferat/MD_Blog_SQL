@@ -1,10 +1,9 @@
-# Modelo de Blog.SQL
-
 <pre style="line-height: 1.15;">
           ╔════════════════════════════════════════════════════════╗
           ║                         users                          ║
           ╠════════════════════════════════════════════════════════╣
-  ┌───┬──■║ user_date TIMESTAMP                                    ║
+  ┌───┬──■║ user_id INT (PK)                                       ║
+  │   │   ║ user_date TIMESTAMP                                    ║
   │   │   ║ user_name VARCHAR(255)                                 ║
   │   │   ║ user_email VARCHAR(255)                                ║
   │   │   ║ user_password VARCHAR(63)                              ║
@@ -39,5 +38,4 @@
   └──────█║ cmt_user VARCHAR(255)    (FK → users(user_id))         ║
           ║ cmt_status ENUM('on', 'off', 'del', 'ban')             ║
           ╚════════════════════════════════════════════════════════╝
-
 </pre>
