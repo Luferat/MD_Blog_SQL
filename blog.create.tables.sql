@@ -48,3 +48,14 @@ CREATE TABLE comments (
     FOREIGN KEY (article) REFERENCES articles(art_id),
     FOREIGN KEY (user) REFERENCES users(user_id)
 );
+
+-- Cria tabela de contatos
+CREATE TABLE contacts (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    subject VARCHAR(255),
+    message TEXT,
+    status ENUM('received', 'readed', 'responded', 'archived', 'deleted') DEFAULT 'received'
+);
