@@ -72,6 +72,6 @@ CREATE TABLE art_cat (
     ac_id INT PRIMARY KEY AUTO_INCREMENT,
     ac_category INT,
     ac_article INT,
-    FOREIGN KEY ac_category REFERENCES categories(cat_id),
-    FOREIGN KEY ac_article REFERENCES articles(art_id)
+    FOREIGN KEY (ac_category) REFERENCES categories(cat_id),
+    FOREIGN KEY (ac_article) REFERENCES articles(art_id)
 );
