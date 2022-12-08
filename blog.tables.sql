@@ -48,30 +48,3 @@ CREATE TABLE comments (
     FOREIGN KEY (article) REFERENCES articles(art_id),
     FOREIGN KEY (user) REFERENCES users(user_id)
 );
-
--- Cria tabela de contatos.
-CREATE TABLE contacts (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	name VARCHAR(255) NOT NULL,
-	email VARCHAR(255) NOT NULL,
-	subject VARCHAR(255) NOT NULL,
-	message TEXT NOT NULL,
-	status ENUM('received', 'readed', 'responded', 'archived', 'deleted')
-);
-
--- Cria tabela de categorias.
-CREATE TABLE categories (
-	cat_id INT PRIMARY KEY AUTO_INCREMENT,
-	cat_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	cat_name VARCHAR(127)
-);
-
--- Cria tabela de ligação "artigos-categorias".
-CREATE TABLE art_cat (
-	ac_id INT PRIMARY KEY AUTO_INCREMENT,
-	ac_article INT NOT NULL,
-	ac_category INT NOT NULL,
-	FOREIGN KEY (ac_article) REFERENCES articles (art_id),
-	FOREIGN KEY (ac_category) REFERENCES categories (cat_id)
-);
