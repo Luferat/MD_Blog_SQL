@@ -63,5 +63,5 @@ Modelo de referência para banco de dados "blog.sql". Este é o modelo completo,
              ║ message TEXT                                           ║
              ║ status ENUM('received', 'readed', 'responded',         ║
              ║             'archived', 'deleted')                     ║
-             ╚════════════════════════════════════════════════════════╝                               
+             ╚════════════════════════════════════════════════════════╝ 
 ```
