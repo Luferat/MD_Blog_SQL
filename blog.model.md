@@ -1,9 +1,8 @@
 ---
-title: "Modelo UML do banco de dados"
-subtitle: "Banco de dados Blog.sql"
-author: "André Luferat"
-date: "12/12/2022"
-output: html_document
+Documento: "Modelo UML do banco de dados"
+Título: "Banco de dados Blog.sql"
+Autor: "André Luferat"
+Data: "12/12/2022"
 ---
 
 # Blog Database
