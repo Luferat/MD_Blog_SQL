@@ -35,7 +35,7 @@ Modelo de referência para banco de dados "blog.sql". Este é o modelo completo,
    │ │ │     ║ cmt_date TIMESTAMP                                     ║
    │ │ │     ║ cmt_comment VARCHAR(255)                               ║
    │ │ └────█║ cmt_article VARCHAR(255)  (FK → articles(art_id))      ║
-   │ └──────█║ cmt_user VARCHAR(255)    (FK → users(user_id))         ║
+   │ └──────█║ cmt_user VARCHAR(255)     (FK → users(user_id))        ║
    │         ║ cmt_status ENUM('on', 'off', 'del', 'ban')             ║
    │         ╚════════════════════════════════════════════════════════╝
    │         ╔════════════════════════════════════════════════════════╗
