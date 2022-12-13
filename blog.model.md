@@ -1,5 +1,5 @@
 # Blog Database
-Modelo de referência para banco de dados "blog.sql".
+Modelo de referência para banco de dados "blog.sql". Este é o modelo completo, já com os exercícios resolvidos.
 <pre style="line-height: 1.15;">
              ╔════════════════════════════════════════════════════════╗
              ║                         users                          ║
