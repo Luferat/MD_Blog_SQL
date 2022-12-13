@@ -1,10 +1,3 @@
----
-Documento: "Modelo UML do banco de dados"
-Título: "Banco de dados Blog.sql"
-Autor: "André Luferat"
-Data: "12/12/2022"
----
-
 # Blog Database
 Modelo de referência para banco de dados "blog.sql". Este é o modelo completo, já com os exercícios resolvidos.
 ```
