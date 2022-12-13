@@ -1,6 +1,6 @@
 # Blog Database
 Modelo de referência para banco de dados "blog.sql". Este é o modelo completo, já com os exercícios resolvidos.
-´´´
+```
              ╔════════════════════════════════════════════════════════╗
              ║                         users                          ║
              ╠════════════════════════════════════════════════════════╣
@@ -64,4 +64,4 @@ Modelo de referência para banco de dados "blog.sql". Este é o modelo completo,
              ║ status ENUM('received', 'readed', 'responded',         ║
              ║             'archived', 'deleted')                     ║
              ╚════════════════════════════════════════════════════════╝                               
-´´´
+```
