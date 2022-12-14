@@ -2,13 +2,13 @@
 INSERT INTO users (
 	user_id,
     user_date,
-    name,
-    email,
-    password,
-    birth,
-    avatar,
-    meta,
-    type
+    user_name,
+    user_email,
+    user_password,
+    user_birth,
+    user_avatar,
+    user_meta,
+    user_type
 ) VALUES (
 	'1',
     '2022-11-10 12:44:59',
@@ -45,13 +45,13 @@ INSERT INTO users (
 INSERT INTO users (
 	user_id,
     user_date,
-    name,
-    email,
-    password,
-    birth,
-    avatar,
-    meta,
-    type
+    user_name,
+    user_email,
+    user_password,
+    user_birth,
+    user_avatar,
+    user_meta,
+    user_type
 ) VALUES (
     '4',
 	'2022-11-18 12:13:15',
@@ -88,11 +88,11 @@ INSERT INTO users (
 INSERT INTO articles (
 	art_id,
     art_date,
-    thumb,
-    title,
-    resume,
-    content,
-    author
+    art_thumb,
+    art_title,
+    art_resume,
+    art_content,
+    art_author
 ) VALUES (
 	'1',
     '2022-11-01 12:13:14',
@@ -115,11 +115,11 @@ INSERT INTO articles (
 INSERT INTO articles (
 	art_id,
     art_date,
-    thumb,
-    title,
-    resume,
-    content,
-    author
+    art_thumb,
+    art_title,
+    art_resume,
+    art_content,
+    art_author
 ) VALUES (
 	'3',
     '2022-11-10 14:15:16',
@@ -140,9 +140,9 @@ INSERT INTO articles (
 
 -- Cria comentários para testes.
 INSERT INTO comments (
-    comment,
-    article,
-    user
+    cmt_comment,
+    cmt_article,
+    cmt_user
 ) VALUES (
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae a quibusdam eligendi.',
     '1',
@@ -175,7 +175,7 @@ VALUES
 	('8', 'Carnívoras');
 
 -- Insere algumas categorias nos artigos.
-INSERT INTO art_cat (ac_article, ac_category) VALUES
+INSERT INTO art_cat (acl_article, acl_category) VALUES
 ('1', '1'),
 ('1', '2'),
 ('2', '1'),

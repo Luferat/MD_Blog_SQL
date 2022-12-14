@@ -48,9 +48,9 @@ Modelo de referência para banco de dados "blog.sql". Este é o modelo completo,
    │     │   ╔════════════════════════════════════════════════════════╗
    │     │   ║                       art_cat                          ║
    │     │   ╠════════════════════════════════════════════════════════╣
-   │     │   ║ ac_id INT (PK)                                         ║
-   │     └──█║ ac_category INT  (PK → categories(cat_id))             ║
-   └────────█║ ac_article INT   (PK → articles(art_id))               ║
+   │     │   ║ acl_id INT (PK)                                        ║
+   │     └──█║ acl_category INT  (PK → categories(cat_id))            ║
+   └────────█║ acl_article INT   (PK → articles(art_id))              ║
              ╚════════════════════════════════════════════════════════╝
              ╔════════════════════════════════════════════════════════╗
              ║                       contacts                         ║
